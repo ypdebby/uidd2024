@@ -13,4 +13,4 @@ bun run dev
 ## 開發規範
 - ESLint
 - StyleLint
-- commitlint
+- commitlint：[規則參考](https://github.com/angular/angular/blob/9fb79d38aade67f6f3bcdac0ffa93b8806baa215/CONTRIBUTING.md#commit)
