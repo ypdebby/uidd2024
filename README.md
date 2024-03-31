@@ -10,7 +10,26 @@ bun i
 bun run dev
 ```
 
-## 開發規範
+## 開發流程
+1. 建立分支
+
+    `git checkout -b 分支名稱`，主要用功能作為分支名稱，例如：about_page, dashboard, calendar...等等
+
+2. 開發完後使用 Lint 工具檢查程式碼
+
+    用 `bun lint` 指令就能使用 Linter 檢查程式碼，也可以用 `bun lint:fix` 自動修改。如果沒有通過檢查的話在 commit 階段也會被 husky 腳本自動擋下來。
+
+3. 推到遠端repo
+
+    `git commit` 之後就能 `git push` 到 GitHub 上，然後開一個 Pull requst。 @yeeway0609 會負責進行 code review，沒問題的話就能直接 merge 進 main 分支，如果需要修改的話就直接再 push 一次修改過後的程式碼 Pull requst 也會自動更新。
+
+## 開發環境
+- Husky
+  - git 指令自動腳本，用來檢查commit前有沒有先執行 lint 指令
 - ESLint
+  - 採用預設規則包，目前主要是規定結尾要加分號之類的
+  - 教學文章：https://denny.qollie.com/2016/07/11/eslint-fxcking-setup/#Configuration-of-ESLint
 - StyleLint
-- commitlint：[規則參考](https://github.com/angular/angular/blob/9fb79d38aade67f6f3bcdac0ffa93b8806baa215/CONTRIBUTING.md#commit)
+  - 採用預設規則包，目前主要是規定CSS屬性的排序
+  - 教學文章：https://ithelp.ithome.com.tw/m/articles/10232650
+
