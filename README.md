@@ -17,7 +17,7 @@ bun run dev
 
 2. 開發完後使用 Lint 工具檢查程式碼
 
-    用 `bun lint` 指令就能使用 Linter 檢查程式碼，也可以用 `bun lint:fix` 自動修改。如果沒有通過檢查的話在 commit 階段也會被 husky 腳本自動擋下來。
+    用 `bun run lint` 指令就能使用 Linter 檢查程式碼，也可以用 `bun run lint:fix` 自動修改。如果沒有通過檢查的話在 commit 階段也會被 husky 腳本自動擋下來。
 
 3. 推到遠端repo
 
