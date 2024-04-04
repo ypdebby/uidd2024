@@ -1,45 +1,116 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  background-color: white !important; 
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.page-container {
+  width: auto;
+  height: 200vh;
 }
 
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.people-images img {
+  position: absolute;
+  bottom: 0px;
+  left: 450px;
+  width: 70%;
+  z-index: 1;
 }
 
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.gray_vector img {
+  position: absolute;
+  top: 90px;
+  left: 620px;
+  width: 800px;
+  height: 500px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+.about_us{
+  position: absolute;
+  top: 35px;
+  left: 61px;
+  width: 450px;
+  height: 190px;
+  font-size: 90px;
+  font-weight: 530;
+  line-height: 100px;
+  color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.introduce{
+  position: absolute;
+  top: 300px;
+  left: 61px;
+  width: 450px;
+  height: 190px;
+  font-size: 21px;
+  color: black;
 }
 
-.card {
-  padding: 2em;
+.personal_introduce{
+  position: absolute;
+  display: flex;
+  width: auto;
+  height: auto;
+  bottom: -100%;
 }
 
-.read-the-docs {
-  color: #888;
+.personsmall{
+  max-width: 15%;
+  margin-left:-18px;
+  width: auto;
+  height: auto;
+  bottom: 0px;
+  z-index: 1;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.personsmall:hover {
+  transform: scale(1.1) translateY(-15px);
+}
+
+.personsmall {
+  transition: transform 0.3s ease;
+}
+
+.vector{
+  position: absolute;
+  display: flex;
+  width: auto;
+  height: auto;
+  bottom: -100%;
+}
+
+.vectorsmall{
+  margin-left: 20px;
+  bottom: 0px;
+}
+
+
+#button1{
+  max-width: 100%;
+  margin-left:0px;
+  width: auto;
+  height: auto;
+  bottom: 0px;
+  z-index: 1;
+  object-fit: contain;
+}
+
+.right-side{
+  width: 450px;
+  height: 150px;
+  bottom: 30px;
+  font-size: 24px;
+  color: black;
+  margin-top: 100px;
+  margin-left: 10px;
+}
+
+.member_introduce{
+  position: absolute;
+  top: 115%;
+  left: 30%;
+  transform: translateX(-50%);
+  font-size: 60px;
+  color: black;
 }
