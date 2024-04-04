@@ -65,7 +65,7 @@ function App() {
         <h className="about_us">
           Something About Us
         </h>
-        <p class="introduce">Our UI team aims to create a sleek web interface for credit card profit analysis. With a focus on design and user experience, we're dedicated to delivering intuitive solutions.</p>
+        <p class="introduce">我們是一支致力於信用卡企劃業務提案的軟體開發團隊，提供即時現有活動，並比較過去同等規模的活動的經濟規模等資訊。透過我們軟體的協助，能夠為企劃業務提供更具可行性和可靠性的建議，協助其提出更有競爭力的提案。</p>
       </div>
       <div className="personal_introduce" >
         <img class="personsmall" id="person1" onMouseEnter={() => handleHover('person1')} src={person1} alt="person1" />
