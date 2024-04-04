@@ -12,8 +12,7 @@ import button1 from './pictures/personal_picture/button.png';
 
 function App() {
   const [displayText, setDisplayText] = useState("");
-  const handleClick = (personId) => {
-    // 根据点击的 personId 区分不同的图片，并显示不同的文本内容
+  const handleHover = (personId) => {
     switch(personId) {
       case 'person1':
         setDisplayText( <>
@@ -69,12 +68,12 @@ function App() {
         <p class="introduce">Our UI team aims to create a sleek web interface for credit card profit analysis. With a focus on design and user experience, we're dedicated to delivering intuitive solutions.</p>
       </div>
       <div className="personal_introduce" >
-        <img class="personsmall" id="person1" onClick={() => handleClick('person1')} src={person1} alt="person1" />
-        <img class="personsmall" id="person2" onClick={() => handleClick('person2')} src={person2} alt="person2" />
-        <img class="personsmall" id="person3" onClick={() => handleClick('person3')} src={person3} alt="person3" />
-        <img class="personsmall" id="person4" onClick={() => handleClick('person4')} src={person4} alt="person4" />
-        <img class="personsmall" id="person5" onClick={() => handleClick('person5')} src={person5} alt="person5" />
-        <img id="button1" src={button1} alt="button1" />
+        <img class="personsmall" id="person1" onMouseEnter={() => handleHover('person1')} src={person1} alt="person1" />
+        <img class="personsmall" id="person2" onMouseEnter={() => handleHover('person2')} src={person2} alt="person2" />
+        <img class="personsmall" id="person3" onMouseEnter={() => handleHover('person3')} src={person3} alt="person3" />
+        <img class="personsmall" id="person4" onMouseEnter={() => handleHover('person4')} src={person4} alt="person4" />
+        <img class="personsmall" id="person5" onMouseEnter={() => handleHover('person5')} src={person5} alt="person5" />
+        {/* <img id="button1" src={button1} alt="button1" /> */}
         <div className="right-side">
           <p>{displayText}</p>
         </div>
@@ -87,7 +86,7 @@ function App() {
         <img class="vectorsmall" src={vector} alt="vector4" />
         <img class="vectorsmall" src={vector} alt="vector5" />
       </div>
-      
+      <h class="member_introduce">To Craft <br/>an Ultimate User Experience</h>
     </body>
   );
 }
