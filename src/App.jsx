@@ -21,14 +21,14 @@ function App() {
   // ];
   const handleHover = (personId) => {
     switch(personId) {
-    case "person1":
+    case "person5":
       setDisplayText( <>
         <span style={{ fontSize: "30px" }}>曾鈺蘋</span><br />
           工程師<br />
           e-mail: E24103175@gs.ncku.edu.tw
       </>);
       break;
-    case "person2":
+    case "person4":
       setDisplayText( <>
         <span style={{ fontSize: "30px" }}>阮紹銘</span><br />
           工程師<br />
@@ -42,14 +42,14 @@ function App() {
           e-mail: wang3harry@gmail.com
       </>);
       break;
-    case "person4":
+    case "person2":
       setDisplayText( <>
         <span style={{ fontSize: "30px" }}>黃政文</span><br />
           UI/UX設計師<br />
           e-mail: nodong3334@gmail.com
       </>);
       break;
-    case "person5":
+    case "person1":
       setDisplayText( <>
         <span style={{ fontSize: "30px" }}>蘇奕幃</span><br />
           資深工程師<br />
