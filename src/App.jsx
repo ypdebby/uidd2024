@@ -12,13 +12,13 @@ import vector from "./img/personal_picture/Vector.png";
 
 function App() {
   const [displayText, setDisplayText] = useState("");
-  // const member_data = [
-  //   { name: "黃政文", role: "UI/UX設計師", email: "nodong3334@gmail.com", intro: "", img: member1 },
-  //   { name: "蘇奕幃", role: "工程師", email: "yiwei.suuu@gmail.com", intro: "未來想當前端工程師，興趣是聽Kpop跟跑咖🤩", img: member2 },
-  //   { name: "王三禾", role: "工程師", email: "wang3harry@gmail.com", intro: "我想變成一隻(海豚)在海裡游泳", img: member3 },
-  //   { name: "阮紹銘", role: "工程師", email: "bend06b@gmail.com", intro: "我今天想翹課。", img: member4 },
-  //   { name: "曾鈺蘋", role: "工程師", email: "E24103175@gs.ncku.edu.tw", intro: "希望未來可以每天生魚片吃到飽", img: member5 },
-  // ];
+  const member_data = [
+    { name: "黃政文", role: "UI/UX設計師", email: "nodong3334@gmail.com", intro: "", img: member1 },
+    { name: "蘇奕幃", role: "工程師", email: "yiwei.suuu@gmail.com", intro: "未來想當前端工程師，興趣是聽Kpop跟跑咖🤩", img: member2 },
+    { name: "王三禾", role: "工程師", email: "wang3harry@gmail.com", intro: "我想變成一隻(海豚)在海裡游泳", img: member3 },
+    { name: "阮紹銘", role: "工程師", email: "bend06b@gmail.com", intro: "我今天想翹課。", img: member4 },
+    { name: "曾鈺蘋", role: "工程師", email: "E24103175@gs.ncku.edu.tw", intro: "希望未來可以每天生魚片吃到飽", img: member5 },
+  ];
   const handleHover = (personId) => {
     switch(personId) {
     case "person5":
@@ -84,7 +84,7 @@ function App() {
         <div className="right-side">
           <p>{displayText}</p>
         </div>
-      </div>
+      </div>ewdfsdfs
 
       <div className="vector">
         <img className="vectorsmall" src={vector} alt="vector1" />
