@@ -1,7 +1,7 @@
 import { React, useState } from "react";
 import "./index.css";
 import Header from "@/components/Header";
-import main_picture from "@/img/團體照.webp";
+import main_picture from "@/img/member/團體照.webp";
 import member1 from "@/img/member/01-黃政文.webp";
 import member2 from "@/img/member/02-蘇奕幃.webp";
 import member3 from "@/img/member/03-王三禾.webp";
